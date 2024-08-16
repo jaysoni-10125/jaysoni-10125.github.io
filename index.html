@@ -73,7 +73,7 @@
                     
                     <div>
                         <h2 class="about__subtitle">I am Jay Soni</h2>
-                        <p class="about__text">Greetings! I am a Data Scientist with 2+ years of experience and proven knack to improve business decisions by transforming raw, unstructured data into actionable insights that can optimize business processes and drive peak performance for the enterprise. Reach out to deeply understand what the insights are conveying & suggesting you and how to ACT on it.</p>           
+                        <p class="about__text">A Data Scientist with 2+ years of experience and proven knack to improve business decisions by transforming raw, unstructured data into actionable insights that can optimize business processes and drive peak performance for the enterprise. Reach out to deeply understand what the insights are conveying & suggesting you and how to ACT on it.</p>           
                     </div>                                   
                 </div>
             </section>
@@ -173,11 +173,11 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                    <form action="/contact" method="POST" class="contact__form">
+                        <input type="text" name="name"placeholder="Name" class="contact__input" required>
+                        <input type="mail" name="email"placeholder="Email" class="contact__input" required>
+                        <textarea name="Comments..." id="" cols="0" rows="10" class="contact__input" required></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -187,10 +187,10 @@
         <footer class="footer">
             <p class="footer__title">JS</p>
             <div class="footer__social">
-                <a href="https://www.linkedin.com/in/jay-soni-6905021a6/" class="footer__social"><i class='footer'></i></a>
-                <a href="https://github.com/jaysoni-10125/" class="footer__social"><i class='footer' ></i></a>
+                <a href="https://www.linkedin.com/in/jay-soni-6905021a6/" class="footer__social"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/jaysoni-10125/" class="footer__social"><i class='bx bxl-github'></i></a>
             </div>
-            <p class="footer__copy">&#169; All rigths reserved</p>
+            <p class="footer__copy">&#169; All rights reserved</p>
         </footer>
 
 

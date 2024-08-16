@@ -55,3 +55,51 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+/* ===== CONTACT FORM =====*/
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+
+const app = express();
+const port = 3000;
+
+// Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// Serve static files (your HTML file)
+app.use(express.static('public'));
+
+// POST route to handle form submission
+app.post('/contact', (req, res) => {
+    const { name, email, message } = req.body;
+
+    // Set up Nodemailer transporter
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'jayamitsoni10126@gmail.com',
+            pass: 'dr@jay10125'
+        }
+    });
+
+    const mailOptions = {
+        from: email,
+        to: 'jayamitsoni10126@gmail.com',
+        subject: `Contact form submission from ${name}`,
+        text: message
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return res.status(500).send(error.toString());
+        }
+        res.status(200).send('Message sent successfully!');
+    });
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
