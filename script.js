@@ -57,7 +57,7 @@ sr.reveal('.home__social-icon',{ interval: 200});
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
 /* ===== CONTACT FORM =====*/
-
+/*
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -103,3 +103,4 @@ app.post('/contact', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
+*/
