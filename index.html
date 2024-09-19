@@ -22,7 +22,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <img src="imgsrc/profile.jpg" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -31,9 +31,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#workex" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>EXPERIENCE</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
@@ -58,14 +62,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Jay Soni.</h1>
     <p>Data Scientist & Analyst.</p>
-    <img src="C:\Users\LENOVO\OneDrive\Documents\GitHub\jaysoni-10125.github.io\img\prefil.png" alt="boy" class="w3-image" width="992" height="1108">
+    <img src="imgsrc/profile.jpg" alt="boy" class="w3-image" width="992" height="1108">
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>I am a Data Scientist and Analyst with comprehensive experience in processing complex datasets and develop models to transform business processes. Over past couple years, I have demonstrated my proficiency in using tools like Python, SQL, Tableau, Machine Learning and other software packages to build complex machine learning models, automate data analysis processes. With a major in Data Science and minor in Business Administration, I bring a unique blend of strong business acumen and technical skillset that has equipped me with an ability to provide valuable insights that can drive strategic decision making processes. 
+    <p>
+      Greetings! I am a Data Scientist with 2+ years of experience and proven knack to improve business decisions by transforming raw, unstructured data into actionable insights that can optimize business processes and drive peak performance for the enterprise.
+      <br>
+      <br>I am here to assist you to:
+      <br>👉Ask questions to make data driven decisions.
+      <br>👉To prepare the data for exploration.
+      <br>👉To help process your dirty data to clean.
+      <br>👉To answer all your queries and questions by analyzing the data.
+      <br>👉By Sharing the insights through the visualization and reports.
+      <br>👉And, Finally, helping to deeply understand what the insights are conveying & suggesting you how to ACT for it.
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Python</p>
@@ -84,6 +97,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div><br>
+    <div>
+      <p><b>OTHER SKILLS</b> <br>
+        C++, SQL, Statistical testing, Financial Modeling, Time series analysis, Probability, Risk modeling, MS Excel
+      </p>
+    </div>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
       <i class="fa fa-download"></i> Download Resume
@@ -93,7 +111,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         const resumeButton = document.getElementById('download-resume');
 
         resumeButton.addEventListener('click', () => {
-            const resumeFile = 'C:\Users\LENOVO\OneDrive\Documents\GitHub\jaysoni-10125.github.io\JaySoni_Resume.pdf'; // replace with your resume file path
+            const resumeFile = 'imgsrc\JaySoni_Resume.pdf'; // replace with your resume file path
             const blob = new Blob([resumeFile], { type: 'application/pdf' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -194,7 +212,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <div class="column">
         <br>
         <h2>Financial Market Sentiment Analysis Using Twitter Data</h2>
-        <img src="imgsrc/Superstore Sales.png" alt="Norway" style="width:50%; margin: 0 auto; display: block;" class="w3-hover-opacity">
+        <img src="imgsrc/stock sentiment.png" alt="Norway" style="width:50%; margin: 0 auto; display: block;" class="w3-hover-opacity">
         <p>By leveraging the power of machine learning and natural language processing, I've developed a model that can help you see through the fog of Twitter noise. Using a dataset of tweets related to financial markets, I've trained a Support Vector Machine (SVM) model to analyze sentiment of stock market.</p>
         <a href="https://github.com/jaysoni-10125/Brainwave_Matrix_Intern/tree/main/Sentiment%20Analysis" class="access-button">Access Here</a>
       </div>
@@ -204,19 +222,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <div class="column" >
         <br>
         <h2>Bitcoin Beta Forecast Model</h2>
-        <img src="imgsrc/Superstore Sales.png" alt="Norway" style="width:50%; margin: 0 auto; display: block;" class="w3-hover-opacity">
+        <img src="imgsrc/Bitcoin beta.png" alt="Norway" style="width:50%; margin: 0 auto; display: block;" class="w3-hover-opacity">
         <p>Developed a machine learning model to predict 1 week ROI of Bitcoin prices by calculating least MAE from variety of algorithms like SVR, random forest, LSTM, stochastic gradient regressor and rolling forecast. Achieved 2.25% MAE by testing 5 different techniques and 64.3% accuracy in ROI Prediction.</p>
         <a href="https://github.com/jaysoni-10125/Trilemma-Beta" class="access-button">Access Here</a>
       </div>
       <div class="column">
         <br>
         <h2>Retail Store Propensity Model</h2>
-        <img src="imgsrc/Superstore Sales.png" alt="Norway" style="width:50%; margin: 0 auto; display: block;" class="w3-hover-opacity">
+        <img src="imgsrc/RetailOpt.png" alt="Norway" style="width:50%; margin: 0 auto; display: block;" class="w3-hover-opacity">
         <p>Classification models including logistic regression and random forest are introduced along with their diagnostic methods and tuning processes. Variable importance analysis is highlighted following with comparisons of two models.</p>
         <a href="https://github.com/jaysoni-10125/Propensity---Retail" class="access-button">Access Here</a>
       </div>
     </div>
-   </div> 
+  </div> 
+ 
   
 
 
@@ -276,16 +295,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
               <h2>MBA - Data Science & Analytics</h2>
               <h4>Manipal University Jaipur</h4>
               <h7>Aug 2023 - Aug 2025 (Expected)</h7>
-              <p>- Built a Customer Behavioral Progression propensity model for a retail store using XGBOOST for multi-class classification using insights from the last decision tree in the XGBOOST ensemble.<br> - Contributed towards machine learning, customer segmentation analytics, statistical modeling to drive marketing strategies by creating interactive dashboards and reports using data.Table <br>- Automated Excel reports using R Programming and k-means algorithm in R for optimal customer segmentation. <br>- Trained a state-of-the-art Large Language Model (LLM) as a Machine Learning Engineer in facilitating Reinforcement Learning via Human Feedback (RLHF) to fine-tune Al models with an accuracy of 88.5%. <br>- Engineered predictive to analyze the air quality in Nairobi and improved forecast accuracy by 21%.</p>
-          </div>
+              <p style= "color: #ffffffd2; opacity:'0.5'">
+                <b>RELAVANT COURSEWORK:</b><br>
+                <i>Management Information Systems, Project Management, Advanced Machine Learning For Finance, Insurance & Risk Management, Business Intellignece & Visualization, Business Analytics, Statistics, Security Analysis & Portfolio Management</i>
+              </p>
+          </div>          
           <div class="card">
               <h2>Bachelor of Engineering - <br>Electronics & Communication</h2>
               <h4>V.V.P Engineering College - Gujarat Technological University (GTU)</h4>
               <h7>Aug 2019 - May 2023</h7>
-              <p>- Conducted in-depth market research on India's technology sector, integrating numerical and visual metrics using MS Excel and Power BI; delivered a comprehensive report that projected over 20% growth potential in emerging industries by 2030. <br>- Successfully executed qualitative research and descriptive analysis to revamp an ‘online B2B Electronics directory’ with over 10,000 companies listed across 15 categories .<br>- Published news articles and reports based on interviews, innovative researches and tech startups in India.</p>
+              <p></p>
           </div>
       </div>
-    </div>      
+    </div>  
+ </div>       
 
     <!-- Grid for photos 
     <div class="w3-row-padding" style="margin:0 -16px">
@@ -304,7 +327,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- End photo grid -->
     <!--</div>-->
     <!-- End Portfolio Section -->
- </div>
+ 
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -334,10 +357,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <i class="fa fa-github w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-medium w3-hover-opacity"></i>
+    <a href="https://www.linkedin.com/in/jay-soni-6905021a6/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://github.com/jaysoni-10125/" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://public.tableau.com/app/profile/jay.soni3060/vizzes" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M242.69 340.3h26.62v-72.6h67v-25.82h-67v-72.6h-26.62v72.6h-66.15v25.82h66.15ZM119.26 445.18h22.59v-64.54h59.7v-20.17h-59.7v-65.34h-22.59v65.34h-59.7v20.17h59.7ZM370.15 212h22.59v-64.5h60.5v-19.37h-60.5V62.79h-22.59v65.34h-59.7v19.37h59.7ZM246.72 496h19.36v-46h41.15v-16.92h-41.15v-46h-19.36v46h-40.33V450h40.33ZM120.07 212h21v-65.31h60.51v-18.56H141V62.79h-21v65.34H59.56v18.56h60.51Zm315.65 96.84h19.36v-45.18H496v-17.74h-40.92v-45.18h-19.36v45.18h-40.33v17.74h40.33Z"/><path fill="currentColor" fill-rule="evenodd" d="M370.15 445.18h22.59v-64.54h60.5v-20.17h-60.5v-65.34h-22.59v65.34h-59.7v20.17h59.7Z"/><path fill="currentColor" d="M307 74.08V60.37h-40.34V16h-14.52v44.37h-40.33v13.71h40.33v44.37h14.52V74.08ZM56.11 305.61h14.52v-44.37H111v-13.71H70.63V204H56.11v43.56H16v14.52l40.11-.08Z"/></svg></a>
+    <a href="https://medium.com/@jayamitsoni10126" target="_blank"><i class="fa fa-medium w3-hover-opacity"></i></a>
     <p class="w3-medium">All Rights Reseaved to your Host, JS.</p>
   <!-- End footer -->
   </footer>
