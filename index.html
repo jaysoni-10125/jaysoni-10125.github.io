@@ -102,26 +102,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         C++, SQL, Statistical testing, Financial Modeling, Time series analysis, Probability, Risk modeling, MS Excel
       </p>
     </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    
-    <script>
-        const resumeButton = document.getElementById('download-resume');
-
-        resumeButton.addEventListener('click', () => {
-            const resumeFile = 'imgsrc\JaySoni_Resume.pdf'; // replace with your resume file path
-            const blob = new Blob([resumeFile], { type: 'application/pdf' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'Jay_Soni_Resume.pdf'; // set the download file name
-            a.click();
-            URL.revokeObjectURL(url);
-        });
-    </script>
-    
+   
     <!-- Grid for pricing tables 
     <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
