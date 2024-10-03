@@ -3,15 +3,19 @@
 <title>Jay Soni</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="style.css">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
+.w3-sidebar {width: 120px;background: #ffffff;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
@@ -27,19 +31,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-code w3-xxlarge"></i>
     <p>PROJECTS</p>
   </a>
-  <a href="#workex" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#workex" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-briefcase w3-xxlarge"></i>
-    <p>EXPERIENCE</p>
+    <p>WORK</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
@@ -47,7 +51,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-justify w3-small">
     <a href="home" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
     <a href="#projects" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
@@ -59,18 +63,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Jay Soni.</h1>
-    <p>Data Scientist & Analyst.</p>
-    <img src="imgsrc/profile.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
+    <div class="w3-content w3-justify w3-text-grey w3-padding-128">
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home"> 
+        <h1 class="w3-jumbo"><span class="w3-hide-small"><p style="font-size: 12px;">Welcome to my Domain!</p>I'm</span> Jay Soni</h1>    
+        <p>Data Scientist & Analyst.</p>
+        <!--<img src="imgsrc/profile.jpg" alt="boy" class="w3-image" width="992" height="1108">-->
+      </header>
+    </div>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>
-      Greetings! I am a Data Scientist with 2+ years of experience and proven knack to improve business decisions by transforming raw, unstructured data into actionable insights that can optimize business processes and drive peak performance for the enterprise.
+      I am a Data Scientist with 2+ years of experience and proven knack to improve business decisions by transforming raw, unstructured data into actionable insights that can optimize business processes and drive peak performance for the enterprise.
       <br>
       <br>I am here to assist you to:
       <br>👉Ask questions to make data driven decisions.
@@ -321,7 +327,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-section">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Bhuj, Gujarat, India</p>
       <!--<p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 7046001151</p>-->
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: jayamitsoni10126@gmail.com</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Email: jayamitsoni10126@gmail.com</p>
     </div><br>
     <div style="text-align: center;" style="padding: 20px; font-size: 30px; width: 50px;text-align: center;">
       <a href="https://www.linkedin.com/in/jay-soni-6905021a6/" target="_blank" style="padding: 20px; font-size: 30px; width: 30px;text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 50%;">
